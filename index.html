@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckOut - Page || 2023</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/5a21a4a619.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="header-title">Checkout</h1>
+    </header>
+
+
+
+
+
+
+
+    <main>
+
+
+        <div class="information-container">
+
+            <h2 class="form-subtitle"> Contact information </h2>
+
+           
+                <form class="form-user" method="post">
+
+                    <label for="email" class="form-label">e-mail</label>
+                    <div class="form-input-item">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" id="email" name="email" placeholder="Enter your email..." aria-label="email">
+                    </div>
+
+                    <label for="phone" class="form-label">phone</label>
+                    <div class="form-input-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="text" id="phone" name="" placeholder="Enter your phone..."
+                            aria-label="phone number">
+                    </div>
+
+
+                </form>
+
+
+
+                <h2 class="form-subtitle"> Shipping address </h2>
+                <form action="" class="form-shipping" method="post">
+
+                    <label for="shipping-name" class="form-label">Name</label>
+                    <div class="form-input-item">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <input type="text" id="s-name" name="s-name" placeholder="Rodney Cotton"
+                            aria-label="Recievers name">
+                    </div>
+
+
+
+                    <label for="shipping-address" class="form-label">Address</label>
+                    <div class="form-input-item">
+                        <i class="fa-solid fa-house"></i>
+                        <input type="text" id="s-address" name="s-address" placeholder="Your address"
+                            aria-label="Address">
+                    </div>
+
+                    
+
+
+                    <label for="shipping-address" class="form-label">Address</label>
+                    <div class="form-input-item">
+                        <i class="fa-solid fa-building"></i>
+
+                        <input type="text" id="s-city" name="s-address" placeholder="Your address"
+                            aria-label="Address">
+                    </div>
+
+
+
+
+
+
+
+                    <div class="shipping-country-pc">
+
+                        <div class="shipping-country">
+
+                            <label for="shipping-country" class="form-label">country</label>
+                            <div class="form-input-item">
+                                <i class="fa-solid fa-globe-americas"></i>
+                                <select name="select-c" id="selec-c" class="shipping-country-select">
+                                    <option value="">Your country</option>
+                                    <option value="mx">Mexico</option>
+                                    <option value="ca">Canada</option>
+                                    <option value="usa">United States of America</option>
+                                    <option value="ar">Argentina</option>
+                                </select>
+                                <i class="fas fa-chevron-down sc-icon"></i>
+
+                            </div>
+                        </div>
+
+                        <div class="shipping-postal-code">
+                            <label for="shipping-postal-code" class="form-label">postal code</label>
+                            <div class="form-input-item">
+                                <i class="fa-solid fa-truck"></i>
+
+                                <input type="text" id="s-postal-code" name="postal-code" placeholder="Your postal-code"  
+                                  aria-label="Current postal code">
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </form>
+
+
+                <div class="form-checkbox">
+                    <input type="checkbox" id="my-checkbox" aria-label="save this information">
+                    <label for="my-checkbox" class="checkbox-label">Save this information for next time </label>
+                         
+                </div>
+
+                <div class="form-button">
+                    <button class="form-btn">Continue</button>
+                </div>
+
+
+                
+
+
+            </div>
+
+
+
+
+       
+
+
+
+
+
+        <div class="items-container">
+
+         
+            <div class="items-product">
+                <img src="res/photo1.png" alt="backpack">
+
+                <div class="items-product-details">
+
+                    <div class="items-product-name">
+                        <h3 class="item-name">Vintage Backbag</h3>
+
+                        <div class="item-prices">
+                            <p class="final-price">$54.99</p>
+                            <p class="old-price">$94.99</p>
+                        </div>
+
+                        <div class="items-count">
+                            <i class="fa-solid fa-square-plus items-plus"></i>
+                            <p class="counter">1</p>
+                            <i class="fa-solid fa-square-minus items-minus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    
+            <div class="items-product">
+                <img src="res/photo2.png" alt="shoes">
+                <div class="items-product-details">
+                    <div class="items-product-name">
+                        <h3 class="item-name">Levi Shoes</h3>
+                        <div class="item-prices">
+                            <p class="final-price">$74.99</p>
+                            <p class="old-price">$124.99</p>
+                        </div>
+
+                        <div class="items-count">
+                            <i class="fa-solid fa-square-plus items-plus"></i>
+                            <p class="counter">1</p>
+                            <i class="fa-solid fa-square-minus items-minus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--- ticket prices-->
+
+            <div class="ticket-prices">
+                <hr>
+                <div class="ticket-final-price">
+                    <p class="final-price-detail">Shipping</p>
+                    <p class="price">$19</p>
+                </div>
+
+                <hr>
+                <div class="ticket-final-price">
+                    <p class="final-price-detail">Total</p>
+                    <p class="price">$148.98</p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="footer-credits"> created by <a href="">DanaOC</a> - devChallenges.io</p>
+    </footer>
+
+
+
+</body>
+
+</html>

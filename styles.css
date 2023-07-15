@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap');
+
+:root {
+    --main-color: #4E5150;
+    --light-gray: #828282;
+    --items-container: #F2F2F2;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 60%;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+/*------- HEADER -------- */
+header {
+    width: 100%;
+
+    margin-top: 6%;
+
+    margin-bottom: 5%;
+
+}
+
+.header-title {
+    color: var(--main-color);
+    font-size: 36px;
+    font-weight: 600;
+}
+
+
+
+/*--------- MAIN ----------- */
+
+main {
+    width: 100%;
+    display: flex;
+    gap: 10%;
+}
+
+/* ------ sección 1 : form container*/
+.information-container {
+    width: 45%;
+    height: 750px;
+
+}
+
+
+.form-subtitle {
+    color: var(--main-color);
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.form-label {
+    color: var(--main-color);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+
+
+
+
+
+/*container*/
+.form-user {
+    width: 100%;
+    margin-bottom: 58px;
+}
+
+.form-input-item {
+    border: 1px solid #828282;
+    border-radius: 12px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 6px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+}
+
+.form-input-item input[type=text] {
+    font-size: 16px;
+    height: 90%;
+    width: 90%;
+    border: none;
+    color: #333;
+}
+
+.form-input-item input[type=text]:focus {
+    outline: none;
+}
+
+.form-input-item input[type=text]::placeholder {
+    color: var(--light-gray);
+}
+
+
+
+.form-input-item i {
+    margin: 0 10px;
+    color: var(--light-gray);
+}
+
+
+.shipping-country-pc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    gap: 30px;
+
+}
+
+.shipping-country {
+    display: grid;
+    grid-template: 1fr /1fr;
+    gap: 10px;
+    width: 100%;
+}
+
+.shipping-country select {
+    outline: 0;
+    color: var(--light-gray);
+    border-radius: 15px;
+    border: none !important;
+    width: 55%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: none;
+
+
+
+}
+
+.shipping-country .sc-icon {
+    background-color: #e7dddd;
+    padding: 1.5px;
+    border-radius: 1.5px;
+}
+
+
+
+
+
+
+
+
+.shipping-postal-code input[type="text"] {
+    width: 70%;
+}
+
+.shipping-postal-code {
+    width: 100%;
+}
+
+
+
+
+.form-checkbox {
+    margin: 20px 0;
+    display: flex;
+    align-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+
+}
+
+
+
+.checkbox-label::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+
+}
+
+.checkbox-label::after {
+    content: "✓";
+    font-size: 18px;
+    line-height: 1;
+    position: absolute;
+    top: 65%;
+    left: 3px;
+    transform: translate(0, -50%);
+    color: transparent;
+}
+
+input[type="checkbox"]:checked+.checkbox-label::before {
+    border-color: #f2994a;
+    background-color: #f2994a;
+}
+
+input[type="checkbox"]:checked+.checkbox-label::after {
+    color: white;
+}
+
+
+
+
+
+
+
+.form-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 23px;
+}
+
+.form-btn {
+    background-color: orange;
+    padding: 17px 45px;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+}
+
+
+
+
+
+
+
+/* ------ sección 2 : items container*/
+
+.items-container {
+    width: 39%;
+    height: 535px;
+
+    background-color: var(--items-container);
+    border-radius: 12px;
+
+}
+
+.items-product {
+    display: flex;
+    margin: 30px 15px;
+    gap: 6%;
+}
+
+.items-product img {
+    width: 40%;
+}
+
+
+.items-product-details {
+    width: 100%;
+}
+
+.item-name {
+    font-size: 16px;
+    color: var(--main-color);
+}
+
+
+.item-prices {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+
+.final-price {
+    font-size: 16px;
+    font-weight: 600;
+    color: orange;
+}
+
+.old-price {
+    font-size: 12px;
+    color: #828282;
+    text-decoration: line-through;
+    font-weight: 600;
+}
+
+
+
+
+.items-count {
+    display: flex;
+    padding: 15px 12px;
+    border: 1px solid var(--main-color);
+    margin-top: 15px;
+    border-radius: 12px;
+    justify-content: space-evenly;
+}
+
+.items-count i {
+    color: #828282;
+    font-size: 24px;
+}
+
+.items-count .counter {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+.ticket-prices {
+
+    margin-top: 25%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.ticket-prices hr {
+    color: #BDBDBD;
+}
+
+
+.ticket-final-price {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 30px;
+}
+
+.final-price-detail {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ticket-final-price .price {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+/*---- FOOOTER -----------*/
+
+
+footer {
+    margin: 10% auto 2% auto;
+    display: flex;
+    justify-content: center;
+    color: #B9BDCF;
+    font-family: var(--font-mont);
+}
+
+footer a {
+    color: #B9BDCF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+    body {
+        width: 80%;
+
+        margin: 0 auto;
+
+    }
+
+    .information-container {
+        width: 70%;
+    }
+
+    .items-container {
+        width: 70%;
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+    header {
+        order: 1;
+        margin: 32px auto;
+        padding-left: 20%;
+    }
+
+    .information-container {
+        order: 3;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .items-container {
+        order: 2;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+
+
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        gap: 50px;
+    }
+}
