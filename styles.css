@@ -440,12 +440,23 @@ footer a:hover {
         order: 2;
         margin: 0 auto;
         width: 90%;
+        height: auto;
+    }
+
+   .items-product-name{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+   }
+
+    .items-product-name .items-count{
+        margin-top: 20%;
     }
 
 
 
     body {
-        width: 100%;
+        width: 80%;
         margin: 0 auto;
     }
 
@@ -453,6 +464,6 @@ footer a:hover {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 2fr;
-        gap: 50px;
+        gap: 5%;
     }
 }
